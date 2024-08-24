@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewSubmitDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/submit_details"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewSubmitDetails"
+            android:layout_marginTop="18dp"
+            android:text="Your Full Name"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewName"
+            android:layout_marginTop="8dp"
+            android:hint="Enter Your Full Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btn_choose_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextName"
+            android:layout_marginTop="8dp"
+            android:text="Choose File"
+            app:cornerRadius="0dp" />
+
+        <EditText
+            android:id="@+id/editTextChooseFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextName"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/btn_choose_file"
+            android:cursorVisible="false"
+            android:hint="Enter the name of file"
+            android:inputType="none" />
+        <ImageView
+            android:id="@+id/imageViewFilePreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/editTextChooseFile"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:src="@color/cardview_light_background"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/textViewContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewFilePreview"
+            android:layout_marginTop="16dp"
+            android:text="Contact Number"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewContact"
+            android:layout_marginTop="8dp"
+            android:hint="Enter Your Contact Number"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textViewProblem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextContact"
+            android:layout_marginTop="16dp"
+            android:text="Water-Related Problem"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextProblem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewProblem"
+            android:layout_marginTop="8dp"
+            android:hint="Describe the Water-Related Problem"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:minLines="1" />
+
+        <TextView
+            android:id="@+id/textViewCoordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextProblem"
+            android:layout_marginTop="16dp"
+            android:text="Your Location"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextCoordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewCoordinates"
+            android:layout_marginTop="8dp"
+            android:cursorVisible="false"
+            android:hint="Coordinates will be displayed here"
+            android:inputType="none" />
+
+        <!-- Removed the fragment element -->
+
+        <TextView
+            android:id="@+id/textViewEditableLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextCoordinates"
+            android:layout_marginTop="16dp"
+            android:text="Location Coordinates (Non-Editable)"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextEditableLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewEditableLocation"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:inputType="none"
+            android:text="Coordinates will be displayed here" />
+
+
+        <TextView
+            android:id="@+id/textViewLandmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEditableLocation"
+            android:layout_marginTop="16dp"
+            android:text="Nearby Landmark (Optional)"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextLandmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewLandmark"
+            android:layout_marginTop="8dp"
+            android:hint="Enter Nearby Landmark (Optional)"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextLandmark"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/textViewShowUploads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/buttonSubmit"
+
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@id/buttonSubmit"
+            android:alpha="0.7"
+            android:text="Show Uploads" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewFilePreview"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

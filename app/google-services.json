@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "272838597603",
+    "project_id": "h2o-sync-final-app",
+    "storage_bucket": "h2o-sync-final-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272838597603:android:c40bcf743d4ed640feded6",
+        "android_client_info": {
+          "package_name": "com.example.h2osync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_VO9oTwmDniluSe2vMBl_TOxc6ofp6Ek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272838597603:android:0e715d71c32857b8feded6",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_VO9oTwmDniluSe2vMBl_TOxc6ofp6Ek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

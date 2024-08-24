@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="google_map_api_key">AIzaSyAmbNqfW2D1hZwbYZPSK4_UjFzRCGU5deM</string>
+    <string name="maps">Maps</string>
+
+
+    <!-- ... -->
+    <string-array name="map_types">
+        <item>Standard</item>
+        <item>Satellite</item>
+        <item>Terrain</item>
+        <item>Hybrid</item>
+    </string-array>
+    <!-- ... -->
+
+    <string name="app_name">H2O Sync</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="click_here_to_login">Click here to login</string>
+    <string name="click_here_to_register">click here to register</string>
+    <string name="logout">Logout</string>
+    <string name="go_maps">H2O Sync</string>
+    <string name="welcome">Welcome</string>
+    <string name="please_login_with_your_information">Please login with your information</string>
+    <string name="email_address">Email Address</string>
+    <string name="enter_password_here">Enter password here</string>
+    <string name="enter_email_address_here">Enter email address here</string>
+    <string name="remeber_me">Remeber me</string>
+    <string name="forgotten_password">Forgotten password ?</string>
+    <string name="create_account">Create Account</string>
+    <string name="enter_details_for_signing_up_your_account">Enter details for signing up your account</string>
+    <string name="or">or</string>
+    <string name="then">Then</string>
+    <string name="submit_details">Submit Details</string>
+    <string name="enter_dob">Enter DOB (DD/MM/YYYY)</string>
+    <string name="enter_name">Enter Name</string>
+
+
+</resources>
